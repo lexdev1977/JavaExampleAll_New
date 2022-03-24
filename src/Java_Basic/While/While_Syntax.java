@@ -3,6 +3,7 @@ package Java_Basic.While;
 public class While_Syntax {
     public static void main(String[] args) {
 
+//        Циклы – операторы многократного выполнения действий
 
 //        Цикл с предусловием
 
@@ -31,13 +32,14 @@ public class While_Syntax {
 //          осуществляет переход к логическому выражению оператора while.
 //          Если вычисленное выражение будет истинно – выполнение цикла будет продолжено.
 
+        int[] h = {1, 0, 3, 0, 0, 3, 3, 0, 3, 3};
         int c = 0;
-        while (c < 5) {     // (логическое выражение)
-            if (c==3) {
-                System.out.println(c + " - Это число три");
+        while (c < 10) {
+            if (h[c] != 3) {    // если число в массиве не является тройкой, то не печатая продолжаем цикл
                 c++;
+                continue;
             }
-            System.out.println(c +" - Это число не тройка");
+            System.out.println(h[c]);
             c++;
         }
 
