@@ -1,9 +1,6 @@
 package Java_Extend.Java_Collections.Set;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Set_Syntax {
     public static void main(String[] args) {
@@ -70,16 +67,19 @@ public class Set_Syntax {
 //      .contains - этот метод проверяет, содержит ли Set данный элемент (объект)
 //       в set этот метод работает очень быстро, так как используется хеширование
 
-        System.out.println(hashSet.contains("Nataly"));
-        System.out.println(hashSet.contains("Alex"));
+        System.out.println("Содержит или нет объект Nataly - " + hashSet.contains("Nataly"));
+        System.out.println("Содержит или нет объект Alex - " + hashSet.contains("Alex"));
         System.out.println();
 
 //      .isEmpty - проверка пустой ли Set или нет
-        System.out.println(hashSet.isEmpty());
+        System.out.println("Пустой или нет - " + hashSet.isEmpty());
         System.out.println();
 
 //        .toString переопределен
-        System.out.println(hashSet+"\n");
+        System.out.println("При вызове toString, выводит вот в таком виде - " + hashSet + "\n");
+
+//       узнать разиер множества
+        System.out.println("Размер - " + hashSet.size() + "\n");
 
 
 
@@ -98,24 +98,35 @@ public class Set_Syntax {
         Set <Integer> intersection = new HashSet<>(set01);
         Set <Integer> difference = new HashSet<>(set01);
 
-//        union - объединение множеств
+
+//        union - объединение множеств (1,2,3) (2,3,4) = (1,2,3,4)
 
         System.out.println("Объединение union и set02: " + union +set02);
         union.addAll(set02);
         System.out.println("Результат: " + union +"\n");
 
-//        intersection - пересечение множеств
+
+//        intersection - пересечение множеств (1,2,3) (2,3,4) = (2,3)
 
         System.out.println("Пересечение intersection и set02: " + intersection +set02);
         intersection.retainAll(set02);
         System.out.println("Результат: " + intersection + "\n");
 
-        //        difference - разность множеств
+
+//        difference - разность множеств (1,2,3) (2,3,4) = (1)
 
         System.out.println("Разность difference и set02: " + difference +set02);
         difference.removeAll(set02);
         System.out.println("Результат: " + difference + "\n");
 
+
+//        Как конвертировать в список
+        Set setTest = new HashSet();
+        setTest.add("Первый элемент");
+        setTest.add("Второй элемент");
+        List listTest = new ArrayList();
+        listTest.addAll(setTest);
+        System.out.println("Множество передали в список - " + listTest);
 
 
 
