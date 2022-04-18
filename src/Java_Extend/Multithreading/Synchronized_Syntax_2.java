@@ -49,7 +49,7 @@ public class Synchronized_Syntax_2 {
     static class Work{
         Random random = new Random();                           // создаем переменную случайного числа
 
-        private Object Lock01 = new Object();                   // создадим два класса для синхронизации потоков
+        private Object Lock01 = new Object();                   // создадим два объекта для синхронизации потоков
         private Object Lock02 = new Object();
 
         private List<Integer> list01 = new ArrayList();         // создаем два списка

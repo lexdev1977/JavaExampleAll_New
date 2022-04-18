@@ -24,7 +24,7 @@ public class JTextField_Syntax {
 
 //        Thread.sleep(10000);
 
-        textField.addActionListener(new ActionListener() {
+        textField.addActionListener(new ActionListener() {   // обработка textField и передача его текста в textArea
             @Override
             public void actionPerformed(ActionEvent e) {
                 textArea.setText(textField.getText());

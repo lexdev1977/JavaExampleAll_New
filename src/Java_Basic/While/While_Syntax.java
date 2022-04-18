@@ -3,9 +3,14 @@ package Java_Basic.While;
 public class While_Syntax {
     public static void main(String[] args) {
 
-//        Циклы – операторы многократного выполнения действий
+/*        Циклы – операторы многократного выполнения действий
 
-//        Цикл с предусловием
+        - while
+        - do
+        - break
+        - continue
+
+        Цикл с предусловием                                                                                       */
 
         int a = 0;
         while (a < 5) {     // (логическое выражение)

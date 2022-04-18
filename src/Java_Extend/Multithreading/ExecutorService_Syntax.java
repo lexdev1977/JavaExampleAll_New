@@ -7,9 +7,19 @@ import java.util.concurrent.TimeUnit;
 
 public class ExecutorService_Syntax {
 
+//                                      Создание Пул потоков
 
 //        *** ExecutorService -  исполняет асинхронный код в одном или нескольких потоках ***
-//                                      (создание Пул потоков)
+
+
+/*
+      - .submit - добавления новой работы для пула потоков
+      - .shutdown - прекращение добавления работ и запуск пула
+      - .awaitTermination - ожидание указывается время ожидания
+
+*/
+
+
     public static void main(String[] args) throws InterruptedException {
 
         long a = System.currentTimeMillis();   // счетчик времени
