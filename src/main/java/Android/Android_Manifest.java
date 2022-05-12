@@ -1,6 +1,6 @@
 package Android;
 
-public class Android_Manifest_General {
+public class Android_Manifest {
 
 /*
                                 Файл манифеста AndroidManifest.xml
