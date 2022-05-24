@@ -21,6 +21,7 @@ public class URL_InputStream {
         System.out.println(str);
 
 
+
         // код для считывания картинки из интернета и сохранении ее в файл
 
         String image = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png";
@@ -30,15 +31,18 @@ public class URL_InputStream {
         Path path = Path.of("c:\\GoogleLogo.jpg");
         Files.copy(input1, path);
 
-    // еще вариант считывания содержимого по адрессу
+
+
+        // еще вариант считывания содержимого по адрессу
+
         URL url2 = new URL("https://javarush.ru");
         System.out.println(getResponseFromURL(url2));   // вызов метода getResponseFromURL
-
-
-
     }
 
+
+
     // метод который считывает данные по адресу и возвращает в виде строки
+
     public static String getResponseFromURL(URL url2) throws IOException{
         HttpURLConnection urlConnection = (HttpURLConnection) url2.openConnection();
         try {

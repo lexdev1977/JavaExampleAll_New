@@ -1,4 +1,4 @@
-package NetWork_Java_Android;
+package NetWork_Java_Android_JSON;
 
 public class Uri_Android_General {
 

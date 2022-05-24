@@ -36,6 +36,7 @@ public static void main(String[] args) {
         }
     };
 
+
 //  Сканирование и вывод всех файлов в директории по указанному пути с учетом фильтра
 
     for (File file : folder.listFiles(filter))

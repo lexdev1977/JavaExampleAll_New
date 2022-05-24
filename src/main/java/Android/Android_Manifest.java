@@ -4,6 +4,8 @@ public class Android_Manifest {
 
 /*
                                 Файл манифеста AndroidManifest.xml
+                                                                                                                                                             *//**
+<!--    <uses-permission android:name="android.permission.INTERNET"/> - разрешает выход в интернет                                                      *//*
 
     Файл манифеста AndroidManifest.xml предоставляет системе основную информацию о программе.
     Каждое приложение должно иметь свой файл AndroidManifest.xml. Редактировать файл манифеста можно вручную,
