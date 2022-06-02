@@ -3,6 +3,17 @@ package Android;
 public class Android_Resources_Res_Assets {
  /*
 
+                                            Получения ID ресурса
+
+    Context context = MainActivity.this;    // создание контекста
+    Resources res = context.getResources();  // создание ресурса
+    int resourceId = res.getIdentifier("nameResource", "raw", context.getPackageName()); // получение id ресурса
+    textView.setText(String.valueOf(soundId));  //  перевод в String и передача во View
+
+    значение ID для не найденного ресурса будет - 0
+
+
+
                                             Resources (Ресурсы)
 
     В Android принято хранить такие объекты, как изображения, строковые константы, цвета, анимацию,

@@ -13,6 +13,7 @@ public class Switch_Syntax {
         }
 
 
+
         char charValue = switch (value) {
             case 1 -> '1';
             case 2, 3, 4 -> '2';
@@ -34,6 +35,9 @@ public class Switch_Syntax {
                 System.out.println("Нет такого значения");
         }
     }
+
+
+
 
 
 }

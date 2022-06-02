@@ -68,14 +68,14 @@ public class JSON_General {
        Пример:
                                                                                                                                                                         *//**
       {
-       "firstName": "Иван",
+       "firstName": "Иван",                                    <!-- "ключ" : "значение"
        "lastName": "Иванов",
-       "address": {
+       "address": {                                            <!-- "ключ" : "значение в виде объекта"
            "streetAddress": "Московское ш., 101, кв.101",
            "city": "Ленинград",
            "postalCode": 101101
        },
-       "phoneNumbers": [
+       "phoneNumbers": [                                       <!-- "ключ" : "значение в виде массива"
            "812 123-1234",
            "916 123-4567"
        ]
